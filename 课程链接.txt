@@ -1,4 +1,4 @@
-1.第一课 心理建设：
+﻿1.第一课 心理建设：
 https://qokw0do7wr.feishu.cn/file/boxcnCXRcX4SbX0Zfys9qhg4bth
 
 2.学会提问
@@ -12,3 +12,6 @@ https://qokw0do7wr.feishu.cn/file/boxcn78pTCPISHgrs7u8x148W0U
 
 5.第四课 条件分支
 https://qokw0do7wr.feishu.cn/file/boxcnGqkXpXicWXFjQbyzktlIWh
+
+6.第五课 循环结构
+https://qokw0do7wr.feishu.cn/file/boxcnKgOK5BqeOERAUzzLrEB5Jb
