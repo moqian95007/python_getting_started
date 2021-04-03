@@ -1,0 +1,181 @@
+set集合、dic字典
+
+set特性：
+无序的 Hash（哈希）算法
+不能重复
+a=['A','A','A']
+
+去重：
+b=set(a)
+print(b)
+
+set用法：
+初始化
+set={1,2,3}
+set=set()
+
+set.add()添加元素
+set.remove()删除元素
+len(set)获取set的长度
+
+x&y	交集
+x|y	并集
+x-y	差集
+x^y	补集
+
+dic字典，dictionary的简写，（键key-值value）。在其他的很多语言里，比如java，这种类型叫map。
+
+学号 姓名
+001	张三
+002 李四
+003 王五
+
+dic={'001':'张三','002':'李四','003':'王五'}
+
+dic={}
+
+print(dic.keys())
+print(dic.values())
+print(dic.items())
+len(dic)
+
+dic的key不能重复
+
+获取某个值
+dic['001']
+更新某个值
+dic['001']='李四'
+删除某个值
+del dic['001']
+增加/更新键值对：
+dic.update({'004':'赵六'})
+
+dic={'001':'张三','002':'李四','003':'王五'}
+print(dic)
+dic.update({'001':'刘七','004':'赵六'})
+print(dic)
+
+
+
+
+函数/方法/function
+abs()
+print()
+range()
+
+到底什么是方法呢？
+工厂
+放进去一些材料，生产出成品。
+材料，就是参数
+成品，就是返回值
+
+
+number=int(input())
+if(number<0):
+	number=-number
+print(number)
+
+>>>>>>>>
+
+def absolute(number):
+	if(number<0):
+		number=-number
+	return number
+
+print(absolute(int(input())))
+
+定义方法原则：一个方法最多只做一件事
+
+定义一个空函数：
+
+def test():
+	pass
+
+
+返回值
+python中所有方法都有返回值。如果不写，默认返回None。
+
+def test():
+	print("不写return语句")
+
+
+参数
+
+位置参数
+def plus(x,y):
+	return x+y
+	
+默认参数
+print(end='\n')	
+
+def info(name,age=17):
+	print(name,age)
+
+info('小明')
+info('小红',16)
+
+可变参数
+def sign_up(*names):
+	print("报名的同学：")
+	for name in names:
+		print(name)
+
+sign_up('小明')
+sign_up('小明','小红')
+sign_up()
+
+
+关键字参数
+def info(name,age=17,**memo):
+	print(name,age,memo)
+	
+info('小明',sex='男')
+info('小红',city='北京',high_school='第一高中')
+	
+命名关键字参数
+def info(name,age=17,*,sex,city):
+	print(name,age,sex,city)
+	
+info('小明',sex='男')
+info('小明',sex='男',city='北京')
+info('小红',city='北京',high_school='第一高中')
+info('小红',city='北京',sex='女')
+
+
+def info(name,age=17,*,sex,city='北京'):
+	print(name,age,sex,city)
+	
+info('小明',sex='男')
+info('小红',sex='女')
+
+
+def info(name,age=17,*test,sex,city='北京'):
+	print(name,age,sex,city)
+
+
+lambda表达式，或者叫lambda函数，或者直接叫lambda。它是一个匿名函数。匿名就是没有名字的意思。
+
+def plus(x,y):
+	return x+y
+	
+lambda x,y:x+y	
+
+plus=lambda x,y:x+y
+print(plus(1,2))
+
+当做函数的返回值：
+def plus(x,y):
+	return lambda x,y:x+y
+	
+当做函数的参数：
+比如，我们有一个这样的list
+students=[{'名称':'小明','年龄':11},{'名称':'小红','年龄':18},{'名称':'小橙','年龄':15}]
+sorted_students=sorted(students,key = lambda i: i['年龄'],reverse=True)
+print(sorted_students)
+
+
+作业：学生成绩管理系统。
+
+
+
+
